@@ -1,3 +1,15 @@
 /* You can add custom styles here. */
+.ingredients ul {
+  margin: 0;
+  padding: 0;
 
+  @media (min-width: 38rem) {
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid rgb(63, 63, 63);
+  }
+  li {
+    list-style: none;
+  }
+}
 // @import "plugins/numbered";

@@ -8,7 +8,7 @@
   translation: Sidst opdateret af
 
 - id: Expand
-  translation: Udvid
+  translation: Vis mere
 
 - id: bookSearchConfig
   translation: "{ cache: true }"
