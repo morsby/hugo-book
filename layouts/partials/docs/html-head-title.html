@@ -1,1 +1,1 @@
-{{ partial "docs/title" . }} | {{ .Site.Title -}}
+{{ if not .IsHome }} {{ partial "docs/title" . }} | {{ end }} {{ .Site.Title -}}

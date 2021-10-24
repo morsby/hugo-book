@@ -24,8 +24,12 @@ body {
 }
 // @import "plugins/numbered";
 
+.book-page,body {
+  min-width: 10rem;
+}
+
 .book-page {
-  min-width: 15rem;
+  padding: 2rem 5rem;
 }
 
 .max-height {
