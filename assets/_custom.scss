@@ -23,3 +23,11 @@ body {
   }
 }
 // @import "plugins/numbered";
+
+.book-page {
+  min-width: 15rem;
+}
+
+.max-height {
+  max-height: calc(100vh - 12rem);
+}
