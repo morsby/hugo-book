@@ -24,12 +24,16 @@ body {
 }
 // @import "plugins/numbered";
 
-.book-page,body {
+.book-page,
+body {
   min-width: 10rem;
 }
 
 .book-page {
-  padding: 3rem 5rem 2rem 5rem;
+  padding: 2rem;
+  @media (min-width: $mobile-breakpoint) {
+    padding: 3rem 5rem 2rem 5rem;
+  }
 }
 
 .max-height {
