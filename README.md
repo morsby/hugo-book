@@ -39,6 +39,7 @@
 ## Installation
 
 ### Install as git submodule
+
 Navigate to your hugo project root and run:
 
 ```
@@ -56,6 +57,7 @@ hugo server --minify --theme book
 You can also add this theme as a Hugo module instead of a git submodule.
 
 Start with initializing hugo modules, if not done yet:
+
 ```
 hugo mod init github.com/repo/path
 ```
@@ -94,8 +96,10 @@ hugo server --minify --theme book
 
 ### File tree menu (default)
 
-By default, the theme will render pages from the `content/docs` section as a menu in a tree structure.  
-You can set `title` and `weight` in the front matter of pages to adjust the order and titles in the menu.
+By default, the theme will render pages from the `content/docs` section as a menu in a
+tree structure.  
+You can set `title` and `weight` in the front matter of pages to adjust the order and
+titles in the menu.
 
 ### Leaf bundle menu (Deprecated)
 
@@ -141,7 +145,8 @@ A blog is not the primary usecase of this theme, so it has only minimal features
 ### Site Configuration
 
 There are a few configuration options that you can add to your `config.toml` file.  
-You can also see the `yaml` example [here](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml).
+You can also see the `yaml` example
+[here](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml).
 
 ```toml
 # (Optional) Set Google Analytics if you use it to track your website.
@@ -230,7 +235,10 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
 
 ### Multi-Language Support
 
-Theme supports Hugo's [multilingual mode](https://gohugo.io/content-management/multilingual/), just follow configuration guide there. You can also tweak search indexing configuration per language in `i18n` folder.
+Theme supports Hugo's
+[multilingual mode](https://gohugo.io/content-management/multilingual/), just follow
+configuration guide there. You can also tweak search indexing configuration per language
+in `i18n` folder.
 
 ### Page Configuration
 
@@ -264,9 +272,11 @@ bookSearchExclude = true
 
 ### Partials
 
-There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
+There are layout partials available for you to easily override components of the theme in
+`layouts/partials/`.
 
-In addition to this, there are several empty partials you can override to easily add/inject code.
+In addition to this, there are several empty partials you can override to easily
+add/inject code.
 
 | Empty Partial                                      | Placement                                   |
 | -------------------------------------------------- | ------------------------------------------- |
@@ -292,14 +302,16 @@ In addition to this, there are several empty partials you can override to easily
 
 ### Plugins
 
-There are a few features implemented as plugable `scss` styles. Usually these are features that don't make it to the core but can still be useful.
+There are a few features implemented as plugable `scss` styles. Usually these are features
+that don't make it to the core but can still be useful.
 
 | Plugin                            | Description                                                 |
 | --------------------------------- | ----------------------------------------------------------- |
 | `assets/plugins/_numbered.scss`   | Makes headings in markdown numbered, e.g. `1.1`, `1.2`      |
 | `assets/plugins/_scrollbars.scss` | Overrides scrollbar styles to look similar across platforms |
 
-To enable plugins, add `@import "plugins/{name}";` to `assets/_custom.scss` in your website root.
+To enable plugins, add `@import "plugins/{name}";` to `assets/_custom.scss` in your
+website root.
 
 ### Hugo Internal Templates
 
@@ -308,8 +320,10 @@ There are a few hugo templates inserted in `<head>`
 - [Google Analytics](https://gohugo.io/templates/internal/#google-analytics)
 - [Open Graph](https://gohugo.io/templates/internal/#open-graph)
 
-To disable Open Graph inclusion you can create your own empty file `\layouts\_internal\opengraph.html`.
-In fact almost empty not quite empty because an empty file looks like absent for HUGO. For example:
+To disable Open Graph inclusion you can create your own empty file
+`\layouts\_internal\opengraph.html`. In fact almost empty not quite empty because an empty
+file looks like absent for HUGO. For example:
+
 ```
 <!-- -->
 ```
@@ -324,20 +338,26 @@ In fact almost empty not quite empty because an empty file looks like absent for
 - [Mermaid](https://hugo-book-demo.netlify.app/docs/shortcodes/mermaid/)
 - [Tabs](https://hugo-book-demo.netlify.app/docs/shortcodes/tabs/)
 
-By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering. It is recommended to set `markup.goldmark.renderer.unsafe=true` if you encounter problems.
+By default, Goldmark trims unsafe outputs which might prevent some shortcodes from
+rendering. It is recommended to set `markup.goldmark.renderer.unsafe=true` if you
+encounter problems.
 
 ```toml
 [markup.goldmark.renderer]
   unsafe = true
 ```
 
-If you are using `config.yaml` or `config.json`, consult the [configuration markup](https://gohugo.io/getting-started/configuration-markup/)
+If you are using `config.yaml` or `config.json`, consult the
+[configuration markup](https://gohugo.io/getting-started/configuration-markup/)
 
 ## Versioning
 
-This theme follows a simple incremental versioning. e.g. `v1`, `v2` and so on. There might be breaking changes between versions.
+This theme follows a simple incremental versioning. e.g. `v1`, `v2` and so on. There might
+be breaking changes between versions.
 
-If you want lower maintenance, use one of the released versions. If you want to live on the bleeding edge of changes, you can use the `master` branch and update your website when needed.
+If you want lower maintenance, use one of the released versions. If you want to live on
+the bleeding edge of changes, you can use the `master` branch and update your website when
+needed.
 
 ## Contributing
 
@@ -352,3 +372,5 @@ Primary goals are:
 - Avoid using JS if it can be solved by CSS.
 
 Feel free to open issues if you find missing configuration or customisation options.
+
+_Custommade_
